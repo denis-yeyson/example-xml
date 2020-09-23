@@ -1,0 +1,74 @@
+body {
+   margin: 0;
+   padding: 0;
+   font-family: 'Roboto',
+      sans-serif;
+}
+
+::-webkit-scrollbar {
+   width: 8px;
+   /* Tamaño del scroll en vertical */
+   height: 8px;
+   /* Tamaño del scroll en horizontal */
+   display: block;
+   /* Ocultar scroll */
+}
+
+::-webkit-scrollbar-thumb {
+   background: #ccc;
+   border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+::-webkit-scrollbar-thumb:hover {
+   background: #b3b3b3;
+   box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+::-webkit-scrollbar-thumb:active {
+   background-color: #01bdbd;
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+::-webkit-scrollbar-track {
+   background: #e1e1e1;
+   border-radius: 4px;
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+::-webkit-scrollbar-track:hover,
+::-webkit-scrollbar-track:active {
+   background: #d4d4d4;
+}
+
+.CodeMirror {
+   border: 1px solid #eee;
+   border-radius: 5px;
+}
+
+.container {
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   grid-template-rows: 5rem 1fr;
+}
+
+.titulo {
+   grid-area: 1 / 1 / 2 / 3;
+   text-align: center;
+   align-self: center;
+}
+
+.tabla {
+   grid-area: 2 / 1 / 3 / 2;
+   padding: 0 1rem 1rem 2rem;
+}
+
+.editor {
+   grid-area: 2 / 2 / 3 / 3;
+   padding: 0 2rem 1rem 1rem;
+}
+
+tr {
+   text-align: center;
+}
